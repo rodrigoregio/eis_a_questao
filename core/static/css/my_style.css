@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+}
+.nav-li{
+    float: left;
+    margin-right: 20px;
+}
+.nav-li a{
+    text-decoration: none;
+}
+.nav-li a:visited{
+    color:white;
+    text-decoration: none;
+}
+.rodape{
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+.roda-txt{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.roda-txt a{
+    text-decoration: none;
+}
+.roda-txt a:visited{
+    color: white;
+    text-decoration: none;
+}

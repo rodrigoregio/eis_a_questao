@@ -5,10 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/meu_estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/my_style.css' %}">
     <title>Index</title>
 </head>
 <body>
+    <!-- Criar a barra de navegação -->
+    <ul class="nav">
+        <li class="nav-li">
+            <a href="">
+                <i class="fa fa-check"></i>Eis a questão
+            </a>
+        </li>
+        <li class="nav-li">
+            <a href="">Login</a>
+        </li>
+    </ul>
     <!-- Criar a barra de navegação -->
     <div class="content">
         <div class="container">
@@ -17,6 +28,11 @@
             {% endblock %}
         </div>
     </div>
+    <!-- Criar o rodape -->
+    <ul class="rodape">
+        <li class="roda-txt">
+            Todos os direitos reservados a <a href="https://rregio.top/">rregio.top</a></li>
+    </ul>
     <!-- Criar o rodape -->
     <script src="{% static 'js/script.js' %}"></script>
 </body>
