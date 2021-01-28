@@ -52,7 +52,7 @@ body{
 }
 .formulario{
     line-height: 1.6em;
-    margin: 10px;
+    margin: 15px;
 }
 .entrada{
     border: 2px solid black;
@@ -60,7 +60,7 @@ body{
     width: 90%;
 }
 .grupo-input{
-    margin: 15px;
+    margin: 10px;
 }
 .selecting{
     width: 90%;
