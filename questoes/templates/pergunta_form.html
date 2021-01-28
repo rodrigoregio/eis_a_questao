@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Formulário de cadastro de perguntas</h1>
+<form class="formuiario" action="" method="post">{% csrf_token %}
+    {% for field in form_pergunta %}
+        {% if field.field.widget.input_type == 'select' %}
+                <label class="input-grupo-texto label-form">{{ field.label }}</label><br>
+                {{ field }}<br>
+        {% elif field.field.widget.input_type == 'checkbox' %}
+            <label class="input-grupo-texto label-form">{{ field.label }}</label>
+            {{ field }}<br>
+        {% else %}
+            {{ field }}<br>
+        {% endif %}
+    {% endfor %}
+    {% for form in form_alternativas %}
+        <div class="grupo-input">
+            {% for field in form %}
+                {% if field.field.widget.input_type == 'checkbox' %}
+                    {{ field.label }} {{ field }}<br>
+                {% else %}
+                    {{ field }}<br>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+    <button type="submit" class="btn_salvar">Salvar</button>
+</form><br><br><br>
+{% endblock %}

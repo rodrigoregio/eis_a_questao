@@ -47,3 +47,34 @@ body{
     color: white;
     text-decoration: none;
 }
+.content{
+    margin-top: 50px;
+}
+.formulario{
+    line-height: 1.6em;
+    margin: 10px;
+}
+.entrada{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 90%;
+}
+.grupo-input{
+    margin: 15px;
+}
+.selecting{
+    width: 90%;
+    border: 2px solid black;
+    padding: 5px 2px;
+    border-radius: 10px;
+}
+.btn_salvar{
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.btn_salvar:hover{
+    background-color: #aaffaa;
+    color:black;
+}
